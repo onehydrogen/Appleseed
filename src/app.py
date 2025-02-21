@@ -115,8 +115,6 @@ def get_sample_data():
 
 def load_local_csv():
     """Loads CSV data from local data directory."""
-
-
     try:
         # Check for CSV files in the data directory
         csv_files = list(DATA_PATH.glob('*.csv'))
@@ -144,64 +142,53 @@ def load_local_csv():
 def load_github_csv():
     """Loads CSV data with fallback options."""
     try:
-        # Try GitHub first
-        logger.info("Attempting to fetch CSV from GitHub...")
-
-        # Update this URL to the raw content URL of your CSV file
-        raw_url = "https://raw.githubusercontent.com/onehydrogen/Appleseed/main/MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047.csv"
-
-        response = requests.get(raw_url,headers={'Accept': 'text/csv'})
-        if response.status_code == 200:
-            # Create a temporary file to store the CSV content
-            with tempfile.NamedTemporaryFile(mode='w+',delete=False,suffix='.csv',encoding='utf-8') as temp_file:
-                temp_file.write(response.text)
-                temp_file.flush()
-
-                # Read the CSV using pandas with robust error handling
-                try:
-                    df = pd.read_csv(
-                        temp_file.name,
-                        encoding='utf-8',
-                        on_bad_lines='skip',
-                        delimiter=',',
-                        dtype=str  # Read all columns as strings initially
-                    )
-
-                    if not df.empty:
-                        logger.info(f"Successfully loaded GitHub CSV with {len(df)} rows")
-                        return parse_contents(df)
-                except Exception as e:
-                    logger.error(f"Error parsing CSV from GitHub: {str(e)}")
-
-        else:
-            logger.error(f"Failed to fetch CSV from GitHub. Status code: {response.status_code}")
-
-        # If GitHub fails, try local data directory
-        csv_files = list(DATA_PATH.glob('*.csv'))
-        if csv_files:
-            latest_csv = max(csv_files,key=lambda x: x.stat().st_mtime)
-            logger.info(f"Loading local CSV from: {latest_csv}")
-
-            df = pd.read_csv(
-                latest_csv,
-                encoding='utf-8',
-                on_bad_lines='skip',
-                delimiter=',',
-                dtype=str
-            )
-
+        # First try to load from local path
+        logger.info(f"Attempting to load CSV from local path: {CSV_PATH}")
+        if os.path.exists(CSV_PATH):
+            df = pd.read_csv(CSV_PATH)
             if not df.empty:
                 logger.info(f"Successfully loaded local CSV with {len(df)} rows")
+                logger.info(f"Columns found: {df.columns.tolist()}")
                 return parse_contents(df)
 
-        # If all else fails, return sample data
-        logger.warning("No valid CSV found, using sample data")
-        return get_sample_data()
+        # If local file doesn't exist or is empty, try GitHub
+        logger.info("Local file not found or empty, trying GitHub...")
+        import requests
+
+        raw_url = "https://github.com/onehydrogen/Appleseed.git"
+        logger.info(f"Attempting to fetch CSV from: {raw_url}")
+
+        headers = {
+            'Accept': 'text/csv',
+            'User-Agent': 'Mozilla/5.0'
+        }
+
+        response = requests.get(raw_url, headers=headers)
+        if response.status_code != 200:
+            logger.error(f"Failed to fetch CSV from GitHub. Status code: {response.status_code}")
+            logger.error(f"Response content: {response.text[:200]}")
+            return get_sample_data()
+
+        # Create a temporary file to store the CSV content
+        with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.csv', encoding='utf-8') as temp_file:
+            temp_file.write(response.text)
+            temp_file.flush()
+
+            # Read the CSV using pandas
+            df = pd.read_csv(temp_file.name)
+            if df.empty:
+                logger.warning("Empty CSV file from GitHub, using sample data")
+                return get_sample_data()
+
+            logger.info(f"Successfully loaded GitHub CSV with {len(df)} rows")
+            logger.info(f"Columns found: {df.columns.tolist()}")
+            return parse_contents(df)
 
     except Exception as e:
-        logger.error(f"Error in load_github_csv: {str(e)}")
-        logger.error(f"Traceback: {traceback.format_exc()}")
+        logger.error(f"Error loading CSV: {str(e)}")
+        logger.error(f"Error traceback: {traceback.format_exc()}")
         return get_sample_data()
+
 
 def parse_contents(df):
     """Parses DataFrame and standardizes the data format."""
@@ -552,7 +539,6 @@ navbar = dbc.NavbarSimple(
         dbc.NavItem(dbc.NavLink("Donate", href="https://www.arappleseed.org/donate", active=True)),
         dbc.NavItem(dbc.NavLink("About", href="https://www.arappleseed.org/", target="_blank")),
     ],
-    brand=html.Img(src="/assets/AR_Appleseed_logo.png",height="40px"),  # Update for logo.png
     brand_href="#",
     color="primary",
     dark=True,
@@ -611,7 +597,7 @@ app.layout = html.Div([
         # Title section
         html.Div([
             html.H1("Arkansas Appleseed Legal Justice Center", className="mb-0"),
-            html.H1(" Legislative Dashboard", className="mb-0"),
+            html.H1(" Legislative Tracker", className="mb-0"),
             html.P("Track, Analyze, and Understand Legislative Data",
                    className="lead mb-0")
         ], className="dashboard-title text-center mb-4"),

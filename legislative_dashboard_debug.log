@@ -294,3 +294,126 @@ and the repository exists.
 2025-01-14 14:46:36,119 - INFO - CSV file found, reading data
 2025-01-14 14:46:36,126 - INFO - Columns in CSV: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'co_sponsors', 'chamber', 'last_action', 'status', 'state_bill_link']
 2025-01-14 14:46:36,151 - INFO - 127.0.0.1 - - [14/Jan/2025 14:46:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-02-21 13:15:05,363 - INFO - Dash is running on http://127.0.0.1:8051/
+
+2025-02-21 13:15:05,381 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8051
+2025-02-21 13:15:05,381 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-21 13:15:49,492 - INFO - Dash is running on http://127.0.0.1:8051/
+
+2025-02-21 13:15:49,507 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8051
+2025-02-21 13:15:49,508 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-21 13:15:51,687 - INFO - 127.0.0.1 - - [21/Feb/2025 13:15:51] "GET / HTTP/1.1" 200 -
+2025-02-21 13:15:51,836 - INFO - 127.0.0.1 - - [21/Feb/2025 13:15:51] "GET /_dash-layout HTTP/1.1" 200 -
+2025-02-21 13:15:51,837 - INFO - 127.0.0.1 - - [21/Feb/2025 13:15:51] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-02-21 13:15:51,978 - INFO - 127.0.0.1 - - [21/Feb/2025 13:15:51] "[33mGET /assets/AR_Appleseed_logo.png HTTP/1.1[0m" 404 -
+2025-02-21 13:15:51,986 - INFO - 127.0.0.1 - - [21/Feb/2025 13:15:51] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-02-21 13:15:51,998 - INFO - 127.0.0.1 - - [21/Feb/2025 13:15:51] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-02-21 13:15:52,087 - INFO - Attempting to load CSV from local path: C:/Users/bendw/Downloads/legislative_analysis_AR_2025_20250217_111047.csv
+2025-02-21 13:15:52,102 - INFO - Successfully loaded local CSV with 855 rows
+2025-02-21 13:15:52,102 - INFO - Columns found: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:15:52,102 - INFO - Processing DataFrame with columns: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:15:52,223 - INFO - 127.0.0.1 - - [21/Feb/2025 13:15:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-02-21 13:16:36,526 - INFO - Dash is running on http://127.0.0.1:8051/
+
+2025-02-21 13:16:36,542 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8051
+2025-02-21 13:16:36,542 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-21 13:16:38,016 - INFO - 127.0.0.1 - - [21/Feb/2025 13:16:38] "GET / HTTP/1.1" 200 -
+2025-02-21 13:16:38,156 - INFO - 127.0.0.1 - - [21/Feb/2025 13:16:38] "GET /_dash-layout HTTP/1.1" 200 -
+2025-02-21 13:16:38,157 - INFO - 127.0.0.1 - - [21/Feb/2025 13:16:38] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-02-21 13:16:38,271 - INFO - 127.0.0.1 - - [21/Feb/2025 13:16:38] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-02-21 13:16:38,272 - INFO - 127.0.0.1 - - [21/Feb/2025 13:16:38] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-02-21 13:16:38,300 - INFO - 127.0.0.1 - - [21/Feb/2025 13:16:38] "[33mGET /assets/AR_Appleseed_logo.png HTTP/1.1[0m" 404 -
+2025-02-21 13:16:38,383 - INFO - Attempting to load CSV from local path: C:/Users/bendw/Downloads/legislative_analysis_AR_2025_20250217_111047.csv
+2025-02-21 13:16:38,396 - INFO - Successfully loaded local CSV with 855 rows
+2025-02-21 13:16:38,396 - INFO - Columns found: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:16:38,396 - INFO - Processing DataFrame with columns: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:16:38,515 - INFO - 127.0.0.1 - - [21/Feb/2025 13:16:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-02-21 13:17:46,095 - INFO - Dash is running on http://127.0.0.1:8051/
+
+2025-02-21 13:17:46,110 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8051
+2025-02-21 13:17:46,110 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-21 13:17:47,949 - INFO - 127.0.0.1 - - [21/Feb/2025 13:17:47] "GET / HTTP/1.1" 200 -
+2025-02-21 13:17:48,210 - INFO - 127.0.0.1 - - [21/Feb/2025 13:17:48] "GET /_dash-layout HTTP/1.1" 200 -
+2025-02-21 13:17:48,212 - INFO - 127.0.0.1 - - [21/Feb/2025 13:17:48] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-02-21 13:17:48,260 - INFO - 127.0.0.1 - - [21/Feb/2025 13:17:48] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-02-21 13:17:48,261 - INFO - 127.0.0.1 - - [21/Feb/2025 13:17:48] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-02-21 13:17:48,283 - INFO - 127.0.0.1 - - [21/Feb/2025 13:17:48] "[33mGET /assets/AR_Appleseed_logo.png HTTP/1.1[0m" 404 -
+2025-02-21 13:17:48,297 - INFO - Attempting to load CSV from local path: C:/Users/bendw/Downloads/legislative_analysis_AR_2025_20250217_111047.csv
+2025-02-21 13:17:48,311 - INFO - Successfully loaded local CSV with 855 rows
+2025-02-21 13:17:48,311 - INFO - Columns found: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:17:48,311 - INFO - Processing DataFrame with columns: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:17:48,437 - INFO - 127.0.0.1 - - [21/Feb/2025 13:17:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-02-21 13:18:13,504 - INFO - Dash is running on http://127.0.0.1:8051/
+
+2025-02-21 13:18:13,520 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8051
+2025-02-21 13:18:13,520 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-21 13:18:18,124 - INFO - 127.0.0.1 - - [21/Feb/2025 13:18:18] "GET / HTTP/1.1" 200 -
+2025-02-21 13:18:18,264 - INFO - 127.0.0.1 - - [21/Feb/2025 13:18:18] "GET /_dash-layout HTTP/1.1" 200 -
+2025-02-21 13:18:18,265 - INFO - 127.0.0.1 - - [21/Feb/2025 13:18:18] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-02-21 13:18:18,299 - INFO - 127.0.0.1 - - [21/Feb/2025 13:18:18] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-02-21 13:18:18,300 - INFO - 127.0.0.1 - - [21/Feb/2025 13:18:18] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-02-21 13:18:18,315 - INFO - 127.0.0.1 - - [21/Feb/2025 13:18:18] "[33mGET /assets/AR_Appleseed_logo.png HTTP/1.1[0m" 404 -
+2025-02-21 13:18:18,400 - INFO - Attempting to load CSV from local path: C:/Users/bendw/Downloads/legislative_analysis_AR_2025_20250217_111047.csv
+2025-02-21 13:18:18,414 - INFO - Successfully loaded local CSV with 855 rows
+2025-02-21 13:18:18,414 - INFO - Columns found: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:18:18,414 - INFO - Processing DataFrame with columns: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:18:18,533 - INFO - 127.0.0.1 - - [21/Feb/2025 13:18:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-02-21 13:20:45,390 - INFO - 127.0.0.1 - - [21/Feb/2025 13:20:45] "GET / HTTP/1.1" 200 -
+2025-02-21 13:20:45,519 - INFO - 127.0.0.1 - - [21/Feb/2025 13:20:45] "GET /_dash-layout HTTP/1.1" 200 -
+2025-02-21 13:20:45,519 - INFO - 127.0.0.1 - - [21/Feb/2025 13:20:45] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-02-21 13:20:45,658 - INFO - 127.0.0.1 - - [21/Feb/2025 13:20:45] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-02-21 13:20:45,658 - INFO - 127.0.0.1 - - [21/Feb/2025 13:20:45] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-02-21 13:20:45,696 - INFO - 127.0.0.1 - - [21/Feb/2025 13:20:45] "[33mGET /assets/AR_Appleseed_logo.png HTTP/1.1[0m" 404 -
+2025-02-21 13:20:45,763 - INFO - Attempting to load CSV from local path: C:/Users/bendw/Downloads/legislative_analysis_AR_2025_20250217_111047.csv
+2025-02-21 13:20:45,773 - INFO - Successfully loaded local CSV with 855 rows
+2025-02-21 13:20:45,773 - INFO - Columns found: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:20:45,773 - INFO - Processing DataFrame with columns: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:20:45,900 - INFO - 127.0.0.1 - - [21/Feb/2025 13:20:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-02-21 13:21:51,906 - INFO - Dash is running on http://127.0.0.1:8051/
+
+2025-02-21 13:21:51,942 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8051
+2025-02-21 13:21:51,942 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-21 13:21:51,956 - INFO - 127.0.0.1 - - [21/Feb/2025 13:21:51] "GET / HTTP/1.1" 200 -
+2025-02-21 13:21:52,138 - INFO - 127.0.0.1 - - [21/Feb/2025 13:21:52] "GET /_dash-layout HTTP/1.1" 200 -
+2025-02-21 13:21:52,168 - INFO - 127.0.0.1 - - [21/Feb/2025 13:21:52] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-02-21 13:21:52,215 - INFO - 127.0.0.1 - - [21/Feb/2025 13:21:52] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-02-21 13:21:52,245 - INFO - 127.0.0.1 - - [21/Feb/2025 13:21:52] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-02-21 13:21:52,267 - INFO - 127.0.0.1 - - [21/Feb/2025 13:21:52] "[33mGET /assets/AR_Appleseed_logo.png HTTP/1.1[0m" 404 -
+2025-02-21 13:21:52,372 - INFO - Attempting to load CSV from local path: C:/Users/bendw/Downloads/legislative_analysis_AR_2025_20250217_111047.csv
+2025-02-21 13:21:52,390 - INFO - Successfully loaded local CSV with 855 rows
+2025-02-21 13:21:52,390 - INFO - Columns found: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:21:52,390 - INFO - Processing DataFrame with columns: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:21:52,643 - INFO - 127.0.0.1 - - [21/Feb/2025 13:21:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-02-21 13:21:54,220 - INFO - 127.0.0.1 - - [21/Feb/2025 13:21:54] "GET / HTTP/1.1" 200 -
+2025-02-21 13:21:54,323 - INFO - 127.0.0.1 - - [21/Feb/2025 13:21:54] "GET /_dash-layout HTTP/1.1" 200 -
+2025-02-21 13:21:54,324 - INFO - 127.0.0.1 - - [21/Feb/2025 13:21:54] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-02-21 13:21:54,373 - INFO - 127.0.0.1 - - [21/Feb/2025 13:21:54] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-02-21 13:21:54,373 - INFO - 127.0.0.1 - - [21/Feb/2025 13:21:54] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-02-21 13:21:54,402 - INFO - 127.0.0.1 - - [21/Feb/2025 13:21:54] "[33mGET /assets/AR_Appleseed_logo.png HTTP/1.1[0m" 404 -
+2025-02-21 13:21:54,476 - INFO - Attempting to load CSV from local path: C:/Users/bendw/Downloads/legislative_analysis_AR_2025_20250217_111047.csv
+2025-02-21 13:21:54,488 - INFO - Successfully loaded local CSV with 855 rows
+2025-02-21 13:21:54,488 - INFO - Columns found: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:21:54,488 - INFO - Processing DataFrame with columns: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:21:54,597 - INFO - 127.0.0.1 - - [21/Feb/2025 13:21:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-02-21 13:24:01,562 - INFO - Dash is running on http://127.0.0.1:8051/
+
+2025-02-21 13:24:01,578 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8051
+2025-02-21 13:24:01,578 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-21 13:24:02,909 - INFO - 127.0.0.1 - - [21/Feb/2025 13:24:02] "GET / HTTP/1.1" 200 -
+2025-02-21 13:24:03,094 - INFO - 127.0.0.1 - - [21/Feb/2025 13:24:03] "GET /_dash-layout HTTP/1.1" 200 -
+2025-02-21 13:24:03,095 - INFO - 127.0.0.1 - - [21/Feb/2025 13:24:03] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-02-21 13:24:03,150 - INFO - 127.0.0.1 - - [21/Feb/2025 13:24:03] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-02-21 13:24:03,152 - INFO - 127.0.0.1 - - [21/Feb/2025 13:24:03] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-02-21 13:24:03,191 - INFO - Attempting to load CSV from local path: C:/Users/bendw/Downloads/legislative_analysis_AR_2025_20250217_111047.csv
+2025-02-21 13:24:03,193 - INFO - 127.0.0.1 - - [21/Feb/2025 13:24:03] "GET /assets/AR_Appleseed_logo.png HTTP/1.1" 200 -
+2025-02-21 13:24:03,207 - INFO - Successfully loaded local CSV with 855 rows
+2025-02-21 13:24:03,207 - INFO - Columns found: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:24:03,207 - INFO - Processing DataFrame with columns: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 13:24:03,324 - INFO - 127.0.0.1 - - [21/Feb/2025 13:24:03] "POST /_dash-update-component HTTP/1.1" 200 -
