@@ -35,7 +35,7 @@ load_dotenv()
 PAGE_SIZE = int(os.getenv('PAGE_SIZE', '10'))
 DEPLOY_KEY_PATH = os.getenv('DEPLOY_KEY_PATH')
 REPO_URL = os.getenv('REPO_URL', 'https://github.com/onehydrogen/Appleseed.git')
-CSV_PATH = 'C:/Users/bendw/Downloads/Appleseed-main/Appleseed-main/MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047 copy.csv'  # Update this line
+CSV_PATH = 'C:/Users/bendw/Downloads/Appleseed-main/Appleseed-main/MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047.csv'  # Update this line
 DEBUG_MODE = os.getenv('DEBUG_MODE', 'False').lower() == 'true'
 
 # Path configuration
@@ -116,6 +116,8 @@ def get_sample_data():
 
 def load_local_csv():
     """Loads CSV data from local data directory."""
+
+
     try:
         # Check for CSV files in the data directory
         csv_files = list(DATA_PATH.glob('*.csv'))
@@ -156,7 +158,7 @@ def load_github_csv():
         logger.info("Local file not found or empty, trying GitHub...")
         import requests
 
-        raw_url = "MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047 copy.csv"
+        raw_url = "MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047.csv"
         logger.info(f"Attempting to fetch CSV from: {raw_url}")
 
         headers = {
@@ -176,7 +178,10 @@ def load_github_csv():
             temp_file.flush()
 
             # Read the CSV using pandas
-            df = pd.read_csv(temp_file.name)
+            df = pd.read_csv(temp_file.name,
+                             on_bad_lines='skip',  # Skip problematic lines
+                             delimiter=',',  # Explicitly specify delimiter
+                             encoding='utf-8')  # Specify encoding
             if df.empty:
                 logger.warning("Empty CSV file from GitHub, using sample data")
                 return get_sample_data()
@@ -540,7 +545,7 @@ navbar = dbc.NavbarSimple(
         dbc.NavItem(dbc.NavLink("Donate", href="https://www.arappleseed.org/donate", active=True)),
         dbc.NavItem(dbc.NavLink("About", href="https://www.arappleseed.org/", target="_blank")),
     ],
-    brand=html.Img(src="/assets/AR Appleseed square crop white on maroon 300x300.png", height="40px"),  # Updated to .png
+    brand=html.Img(src="/assets/AR_Appleseed_logo.png",height="40px"),  # Updated to .png
     brand_href="#",
     color="primary",
     dark=True,
