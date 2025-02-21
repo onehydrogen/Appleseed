@@ -1,0 +1,296 @@
+2025-01-14 12:50:40,818 - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-01-14 12:50:40,825 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+2025-01-14 12:50:40,825 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-14 12:50:43,119 - INFO - 127.0.0.1 - - [14/Jan/2025 12:50:43] "GET / HTTP/1.1" 200 -
+2025-01-14 12:50:43,461 - INFO - 127.0.0.1 - - [14/Jan/2025 12:50:43] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-14 12:50:43,466 - INFO - 127.0.0.1 - - [14/Jan/2025 12:50:43] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-14 12:50:43,518 - INFO - 127.0.0.1 - - [14/Jan/2025 12:50:43] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-01-14 12:50:43,520 - INFO - 127.0.0.1 - - [14/Jan/2025 12:50:43] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-01-14 12:50:43,651 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 12:50:43,664 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 12:50:43,677 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+2025-01-14 12:50:43,678 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:YOUR_USERNAME/YOUR_REPO.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpjnz4n220'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 12:50:44,495 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:YOUR_USERNAME/YOUR_REPO.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpjnz4n220'])'s unused stdout: 
+2025-01-14 12:50:44,496 - DEBUG - AutoInterrupt wait stderr: b"Cloning into '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpjnz4n220'...\nWarning: Permanently added 'github.com' (ED25519) to the list of known hosts.\ngit@github.com: Permission denied (publickey).\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n"
+2025-01-14 12:50:44,496 - ERROR - Repository access error: Cmd('git') failed due to: exit code(128)
+  cmdline: git clone -v -- git@github.com:YOUR_USERNAME/YOUR_REPO.git /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpjnz4n220
+  stderr: 'Cloning into '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpjnz4n220'...
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+'
+2025-01-14 12:50:44,502 - INFO - 127.0.0.1 - - [14/Jan/2025 12:50:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 12:54:58,374 - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-01-14 12:54:58,388 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+2025-01-14 12:54:58,388 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-14 12:55:01,509 - INFO - 127.0.0.1 - - [14/Jan/2025 12:55:01] "GET / HTTP/1.1" 200 -
+2025-01-14 12:55:01,614 - INFO - 127.0.0.1 - - [14/Jan/2025 12:55:01] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-14 12:55:01,615 - INFO - 127.0.0.1 - - [14/Jan/2025 12:55:01] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-14 12:55:01,639 - INFO - 127.0.0.1 - - [14/Jan/2025 12:55:01] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-01-14 12:55:01,640 - INFO - 127.0.0.1 - - [14/Jan/2025 12:55:01] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-01-14 12:55:01,803 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 12:55:01,813 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 12:55:01,822 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+2025-01-14 12:55:01,823 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/MyCSVApp/src/data', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpevfrjtey'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 12:55:02,416 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/MyCSVApp/src/data', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpevfrjtey'])'s unused stdout: 
+2025-01-14 12:55:02,417 - DEBUG - AutoInterrupt wait stderr: b"Cloning into '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpevfrjtey'...\ngit@github.com: Permission denied (publickey).\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n"
+2025-01-14 12:55:02,417 - ERROR - Repository access error: Cmd('git') failed due to: exit code(128)
+  cmdline: git clone -v -- git@github.com:onehydrogen/MyCSVApp/src/data /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpevfrjtey
+  stderr: 'Cloning into '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpevfrjtey'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+'
+2025-01-14 12:55:02,426 - INFO - 127.0.0.1 - - [14/Jan/2025 12:55:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 13:37:39,892 - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-01-14 13:37:39,902 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+2025-01-14 13:37:39,902 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-14 13:37:42,264 - INFO - 127.0.0.1 - - [14/Jan/2025 13:37:42] "GET / HTTP/1.1" 200 -
+2025-01-14 13:37:42,396 - INFO - 127.0.0.1 - - [14/Jan/2025 13:37:42] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-14 13:37:42,398 - INFO - 127.0.0.1 - - [14/Jan/2025 13:37:42] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-14 13:37:42,461 - INFO - 127.0.0.1 - - [14/Jan/2025 13:37:42] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-01-14 13:37:42,464 - INFO - 127.0.0.1 - - [14/Jan/2025 13:37:42] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-01-14 13:37:42,578 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 13:37:42,593 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 13:37:42,616 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+2025-01-14 13:37:42,617 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/MyCSVApp/src/data', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpfl75afub'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 13:37:43,456 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/MyCSVApp/src/data', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpfl75afub'])'s unused stdout: 
+2025-01-14 13:37:43,457 - DEBUG - AutoInterrupt wait stderr: b"Cloning into '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpfl75afub'...\nfatal: remote error: \n onehydrogen/MyCSVApp/src/data is not a valid repository name\nVisit https://support.github.com/ for help\n"
+2025-01-14 13:37:43,457 - ERROR - Repository access error: Cmd('git') failed due to: exit code(128)
+  cmdline: git clone -v -- git@github.com:onehydrogen/MyCSVApp/src/data /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpfl75afub
+  stderr: 'Cloning into '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpfl75afub'...
+fatal: remote error: 
+ onehydrogen/MyCSVApp/src/data is not a valid repository name
+Visit https://support.github.com/ for help
+'
+2025-01-14 13:37:43,465 - INFO - 127.0.0.1 - - [14/Jan/2025 13:37:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 13:38:57,018 - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-01-14 13:38:57,032 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+2025-01-14 13:38:57,032 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-14 13:38:59,629 - INFO - 127.0.0.1 - - [14/Jan/2025 13:38:59] "GET / HTTP/1.1" 200 -
+2025-01-14 13:38:59,738 - INFO - 127.0.0.1 - - [14/Jan/2025 13:38:59] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-14 13:38:59,738 - INFO - 127.0.0.1 - - [14/Jan/2025 13:38:59] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-14 13:38:59,761 - INFO - 127.0.0.1 - - [14/Jan/2025 13:38:59] "GET /favicon.ico HTTP/1.1" 200 -
+2025-01-14 13:38:59,803 - INFO - 127.0.0.1 - - [14/Jan/2025 13:38:59] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-01-14 13:38:59,804 - INFO - 127.0.0.1 - - [14/Jan/2025 13:38:59] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-01-14 13:38:59,884 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 13:38:59,908 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 13:38:59,923 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+2025-01-14 13:38:59,924 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/MyCSVApp', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpq9ooo7x7'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 13:39:00,711 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/MyCSVApp', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpq9ooo7x7'])'s unused stdout: 
+2025-01-14 13:39:00,712 - DEBUG - AutoInterrupt wait stderr: b"Cloning into '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpq9ooo7x7'...\nERROR: Repository not found.\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n"
+2025-01-14 13:39:00,713 - ERROR - Repository access error: Cmd('git') failed due to: exit code(128)
+  cmdline: git clone -v -- git@github.com:onehydrogen/MyCSVApp /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpq9ooo7x7
+  stderr: 'Cloning into '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpq9ooo7x7'...
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+'
+2025-01-14 13:39:00,723 - INFO - 127.0.0.1 - - [14/Jan/2025 13:39:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 13:51:24,864 - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-01-14 13:51:24,870 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+2025-01-14 13:51:24,870 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-14 13:51:27,932 - INFO - 127.0.0.1 - - [14/Jan/2025 13:51:27] "GET / HTTP/1.1" 200 -
+2025-01-14 13:51:28,206 - INFO - 127.0.0.1 - - [14/Jan/2025 13:51:28] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-14 13:51:28,207 - INFO - 127.0.0.1 - - [14/Jan/2025 13:51:28] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-14 13:51:28,246 - INFO - 127.0.0.1 - - [14/Jan/2025 13:51:28] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-01-14 13:51:28,246 - INFO - 127.0.0.1 - - [14/Jan/2025 13:51:28] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-01-14 13:51:28,418 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 13:51:28,428 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 13:51:28,433 - INFO - Attempting to clone repository using SSH key at /Users/benjaminwashington/.ssh/deploy_key_dashboard
+2025-01-14 13:51:28,437 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+2025-01-14 13:51:28,437 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpl70tkmz9'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 13:51:29,781 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpl70tkmz9'])'s unused stdout: 
+2025-01-14 13:51:29,786 - INFO - Looking for CSV at: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpl70tkmz9/MyCSVApp/src/data/legislative_analysis_AR_2025_20250110_095534.csv
+2025-01-14 13:51:29,786 - INFO - CSV file found, reading data
+2025-01-14 13:51:29,800 - INFO - Columns in CSV: ['bill_id', 'bill_number', 'chamber', 'session_year', 'title', 'description', 'status', 'status_date', 'sponsor_name', 'sponsor_party', 'sponsor_district', 'sponsor_state', 'sponsor_role', 'last_action_date', 'last_action', 'last_action_chamber', 'latest_text_doc_id', 'state_bill_link', 'bill_text']
+2025-01-14 13:51:29,831 - INFO - 127.0.0.1 - - [14/Jan/2025 13:51:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 13:54:30,897 - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-01-14 13:54:30,906 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+2025-01-14 13:54:30,906 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-14 13:54:34,453 - INFO - 127.0.0.1 - - [14/Jan/2025 13:54:34] "GET / HTTP/1.1" 200 -
+2025-01-14 13:54:34,725 - INFO - 127.0.0.1 - - [14/Jan/2025 13:54:34] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-14 13:54:34,726 - INFO - 127.0.0.1 - - [14/Jan/2025 13:54:34] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-14 13:54:34,730 - INFO - 127.0.0.1 - - [14/Jan/2025 13:54:34] "GET /favicon.ico HTTP/1.1" 200 -
+2025-01-14 13:54:34,791 - INFO - 127.0.0.1 - - [14/Jan/2025 13:54:34] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-01-14 13:54:34,815 - INFO - 127.0.0.1 - - [14/Jan/2025 13:54:34] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-01-14 13:54:34,941 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 13:54:34,956 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 13:54:34,961 - INFO - Attempting to clone repository using SSH key at /Users/benjaminwashington/.ssh/deploy_key_dashboard
+2025-01-14 13:54:34,965 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+2025-01-14 13:54:34,966 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpem1qo7ed'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 13:54:36,108 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpem1qo7ed'])'s unused stdout: 
+2025-01-14 13:54:36,113 - INFO - Looking for CSV at: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpem1qo7ed/MyCSVApp/src/data/legislative_analysis_AR_2025_20250110_095534.csv
+2025-01-14 13:54:36,113 - ERROR - CSV file not found at path: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpem1qo7ed/MyCSVApp/src/data/legislative_analysis_AR_2025_20250110_095534.csv
+2025-01-14 13:54:36,125 - INFO - 127.0.0.1 - - [14/Jan/2025 13:54:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 13:54:56,300 - INFO - 127.0.0.1 - - [14/Jan/2025 13:54:56] "GET / HTTP/1.1" 200 -
+2025-01-14 13:54:56,398 - INFO - 127.0.0.1 - - [14/Jan/2025 13:54:56] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-14 13:54:56,400 - INFO - 127.0.0.1 - - [14/Jan/2025 13:54:56] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-14 13:54:56,426 - INFO - 127.0.0.1 - - [14/Jan/2025 13:54:56] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-01-14 13:54:56,426 - INFO - 127.0.0.1 - - [14/Jan/2025 13:54:56] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-01-14 13:54:56,556 - INFO - Attempting to clone repository using SSH key at /Users/benjaminwashington/.ssh/deploy_key_dashboard
+2025-01-14 13:54:56,559 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpb0z8_3l_'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 13:54:57,603 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpb0z8_3l_'])'s unused stdout: 
+2025-01-14 13:54:57,607 - INFO - Looking for CSV at: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpb0z8_3l_/MyCSVApp/src/data/legislative_analysis_AR_2025_20250110_095534.csv
+2025-01-14 13:54:57,607 - ERROR - CSV file not found at path: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpb0z8_3l_/MyCSVApp/src/data/legislative_analysis_AR_2025_20250110_095534.csv
+2025-01-14 13:54:57,615 - INFO - 127.0.0.1 - - [14/Jan/2025 13:54:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 13:55:05,570 - INFO - 127.0.0.1 - - [14/Jan/2025 13:55:05] "GET / HTTP/1.1" 200 -
+2025-01-14 13:55:05,658 - INFO - 127.0.0.1 - - [14/Jan/2025 13:55:05] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-14 13:55:05,659 - INFO - 127.0.0.1 - - [14/Jan/2025 13:55:05] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-14 13:55:05,670 - INFO - 127.0.0.1 - - [14/Jan/2025 13:55:05] "GET /favicon.ico HTTP/1.1" 200 -
+2025-01-14 13:55:05,680 - INFO - 127.0.0.1 - - [14/Jan/2025 13:55:05] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-01-14 13:55:05,681 - INFO - 127.0.0.1 - - [14/Jan/2025 13:55:05] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-01-14 13:55:05,881 - INFO - Attempting to clone repository using SSH key at /Users/benjaminwashington/.ssh/deploy_key_dashboard
+2025-01-14 13:55:05,885 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpr9k32rhw'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 13:55:07,009 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpr9k32rhw'])'s unused stdout: 
+2025-01-14 13:55:07,014 - INFO - Looking for CSV at: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpr9k32rhw/MyCSVApp/src/data/legislative_analysis_AR_2025_20250110_095534.csv
+2025-01-14 13:55:07,014 - ERROR - CSV file not found at path: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpr9k32rhw/MyCSVApp/src/data/legislative_analysis_AR_2025_20250110_095534.csv
+2025-01-14 13:55:07,023 - INFO - 127.0.0.1 - - [14/Jan/2025 13:55:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 13:56:02,725 - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-01-14 13:56:02,731 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+2025-01-14 13:56:02,731 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-14 13:56:20,373 - INFO - 127.0.0.1 - - [14/Jan/2025 13:56:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 13:56:20,409 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 13:56:20,426 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 13:56:20,432 - INFO - Attempting to clone repository using SSH key at /Users/benjaminwashington/.ssh/deploy_key_dashboard
+2025-01-14 13:56:20,435 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+2025-01-14 13:56:20,436 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpw1brwtm5'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 13:56:22,139 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpw1brwtm5'])'s unused stdout: 
+2025-01-14 13:56:22,142 - INFO - Looking for CSV at: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpw1brwtm5/MyCSVApp/src/data/legislative_analysis_AR_2025_20250110_095534.csv
+2025-01-14 13:56:22,142 - ERROR - CSV file not found at path: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpw1brwtm5/MyCSVApp/src/data/legislative_analysis_AR_2025_20250110_095534.csv
+2025-01-14 13:56:22,156 - INFO - 127.0.0.1 - - [14/Jan/2025 13:56:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 13:57:25,827 - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-01-14 13:57:25,833 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+2025-01-14 13:57:25,833 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-14 13:57:32,452 - INFO - 127.0.0.1 - - [14/Jan/2025 13:57:32] "GET / HTTP/1.1" 200 -
+2025-01-14 13:57:32,545 - INFO - 127.0.0.1 - - [14/Jan/2025 13:57:32] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-14 13:57:32,546 - INFO - 127.0.0.1 - - [14/Jan/2025 13:57:32] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-14 13:57:32,612 - INFO - 127.0.0.1 - - [14/Jan/2025 13:57:32] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-01-14 13:57:32,620 - INFO - 127.0.0.1 - - [14/Jan/2025 13:57:32] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-01-14 13:57:32,691 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 13:57:32,711 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 13:57:32,717 - INFO - Attempting to clone repository using SSH key at /Users/benjaminwashington/.ssh/deploy_key_dashboard
+2025-01-14 13:57:32,721 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+2025-01-14 13:57:32,721 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpfmr2o1z8'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 13:57:33,741 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpfmr2o1z8'])'s unused stdout: 
+2025-01-14 13:57:33,744 - INFO - Looking for CSV at: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpfmr2o1z8/MyCSVApp/src/data/legislative_analysis_AR_2025_20250114_135201.csv
+2025-01-14 13:57:33,744 - INFO - CSV file found, reading data
+2025-01-14 13:57:33,756 - INFO - Columns in CSV: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'co_sponsors', 'chamber', 'last_action', 'status', 'state_bill_link']
+2025-01-14 13:57:33,798 - INFO - 127.0.0.1 - - [14/Jan/2025 13:57:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 14:06:51,884 - INFO - 127.0.0.1 - - [14/Jan/2025 14:06:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 14:06:51,938 - INFO - 127.0.0.1 - - [14/Jan/2025 14:06:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 14:06:55,651 - INFO - 127.0.0.1 - - [14/Jan/2025 14:06:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 14:06:56,065 - INFO - 127.0.0.1 - - [14/Jan/2025 14:06:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 14:06:56,674 - INFO - 127.0.0.1 - - [14/Jan/2025 14:06:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 14:06:57,033 - INFO - 127.0.0.1 - - [14/Jan/2025 14:06:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 14:07:03,709 - INFO - 127.0.0.1 - - [14/Jan/2025 14:07:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 14:07:03,724 - INFO - 127.0.0.1 - - [14/Jan/2025 14:07:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 14:10:26,591 - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-01-14 14:10:26,615 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+2025-01-14 14:10:26,615 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-14 14:10:29,091 - INFO - 127.0.0.1 - - [14/Jan/2025 14:10:29] "GET / HTTP/1.1" 200 -
+2025-01-14 14:10:29,279 - INFO - 127.0.0.1 - - [14/Jan/2025 14:10:29] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-14 14:10:29,280 - INFO - 127.0.0.1 - - [14/Jan/2025 14:10:29] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-14 14:10:29,314 - INFO - 127.0.0.1 - - [14/Jan/2025 14:10:29] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-01-14 14:10:29,314 - INFO - 127.0.0.1 - - [14/Jan/2025 14:10:29] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-01-14 14:10:29,590 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 14:10:29,612 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 14:10:29,619 - INFO - Attempting to clone repository using SSH key at /Users/benjaminwashington/.ssh/deploy_key_dashboard
+2025-01-14 14:10:29,623 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+2025-01-14 14:10:29,624 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmp1dil2ugi'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 14:10:38,141 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmp1dil2ugi'])'s unused stdout: 
+2025-01-14 14:10:38,145 - INFO - Looking for CSV at: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmp1dil2ugi/MyCSVApp/src/data/legislative_analysis_AR_2025_20250114_135201.csv
+2025-01-14 14:10:38,145 - INFO - CSV file found, reading data
+2025-01-14 14:10:38,170 - INFO - Columns in CSV: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'co_sponsors', 'chamber', 'last_action', 'status', 'state_bill_link']
+2025-01-14 14:10:38,203 - INFO - 127.0.0.1 - - [14/Jan/2025 14:10:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 14:38:56,895 - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-01-14 14:38:56,906 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+2025-01-14 14:38:56,906 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-14 14:38:59,156 - INFO - 127.0.0.1 - - [14/Jan/2025 14:38:59] "GET / HTTP/1.1" 200 -
+2025-01-14 14:38:59,358 - INFO - 127.0.0.1 - - [14/Jan/2025 14:38:59] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-14 14:38:59,360 - INFO - 127.0.0.1 - - [14/Jan/2025 14:38:59] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-14 14:38:59,401 - INFO - 127.0.0.1 - - [14/Jan/2025 14:38:59] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-01-14 14:38:59,404 - INFO - 127.0.0.1 - - [14/Jan/2025 14:38:59] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-01-14 14:38:59,539 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 14:38:59,561 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 14:38:59,571 - INFO - Attempting to clone repository using SSH key at /Users/benjaminwashington/.ssh/deploy_key_dashboard
+2025-01-14 14:38:59,575 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+2025-01-14 14:38:59,576 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmp61r0f7c2'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 14:39:00,894 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmp61r0f7c2'])'s unused stdout: 
+2025-01-14 14:39:00,898 - INFO - Looking for CSV at: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmp61r0f7c2/MyCSVApp/src/data/legislative_analysis_AR_2025_20250114_135201.csv
+2025-01-14 14:39:00,898 - INFO - CSV file found, reading data
+2025-01-14 14:39:00,911 - INFO - Columns in CSV: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'co_sponsors', 'chamber', 'last_action', 'status', 'state_bill_link']
+2025-01-14 14:39:00,940 - INFO - 127.0.0.1 - - [14/Jan/2025 14:39:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 14:41:59,942 - INFO - 127.0.0.1 - - [14/Jan/2025 14:41:59] "GET / HTTP/1.1" 200 -
+2025-01-14 14:42:00,228 - INFO - 127.0.0.1 - - [14/Jan/2025 14:42:00] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-14 14:42:00,232 - INFO - 127.0.0.1 - - [14/Jan/2025 14:42:00] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-14 14:42:00,265 - INFO - 127.0.0.1 - - [14/Jan/2025 14:42:00] "GET /favicon.ico HTTP/1.1" 200 -
+2025-01-14 14:42:00,319 - INFO - 127.0.0.1 - - [14/Jan/2025 14:42:00] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-01-14 14:42:00,320 - INFO - 127.0.0.1 - - [14/Jan/2025 14:42:00] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-01-14 14:42:00,331 - INFO - Attempting to clone repository using SSH key at /Users/benjaminwashington/.ssh/deploy_key_dashboard
+2025-01-14 14:42:00,334 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpcr7knbjo'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 14:42:01,482 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpcr7knbjo'])'s unused stdout: 
+2025-01-14 14:42:01,491 - INFO - Looking for CSV at: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpcr7knbjo/MyCSVApp/src/data/legislative_analysis_AR_2025_20250114_135201.csv
+2025-01-14 14:42:01,491 - INFO - CSV file found, reading data
+2025-01-14 14:42:01,521 - INFO - Columns in CSV: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'co_sponsors', 'chamber', 'last_action', 'status', 'state_bill_link']
+2025-01-14 14:42:01,561 - INFO - 127.0.0.1 - - [14/Jan/2025 14:42:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 14:43:25,792 - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-01-14 14:43:25,804 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8050
+2025-01-14 14:43:25,804 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-14 14:43:27,601 - INFO - 127.0.0.1 - - [14/Jan/2025 14:43:27] "GET / HTTP/1.1" 200 -
+2025-01-14 14:43:27,871 - INFO - 127.0.0.1 - - [14/Jan/2025 14:43:27] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-14 14:43:27,877 - INFO - 127.0.0.1 - - [14/Jan/2025 14:43:27] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-14 14:43:27,906 - INFO - 127.0.0.1 - - [14/Jan/2025 14:43:27] "GET /favicon.ico HTTP/1.1" 200 -
+2025-01-14 14:43:27,990 - INFO - 127.0.0.1 - - [14/Jan/2025 14:43:27] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-01-14 14:43:27,992 - INFO - 127.0.0.1 - - [14/Jan/2025 14:43:27] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-01-14 14:43:28,142 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 14:43:28,163 - DEBUG - Popen(['git', 'version'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=False)
+2025-01-14 14:43:28,173 - INFO - Attempting to clone repository using SSH key at /Users/benjaminwashington/.ssh/deploy_key_dashboard
+2025-01-14 14:43:28,177 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'No such file or directory')
+2025-01-14 14:43:28,178 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmp3ys1wc8s'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 14:43:30,918 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmp3ys1wc8s'])'s unused stdout: 
+2025-01-14 14:43:30,922 - INFO - Looking for CSV at: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmp3ys1wc8s/MyCSVApp/src/data/legislative_analysis_AR_2025_20250114_135201.csv
+2025-01-14 14:43:30,922 - INFO - CSV file found, reading data
+2025-01-14 14:43:30,935 - INFO - Columns in CSV: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'co_sponsors', 'chamber', 'last_action', 'status', 'state_bill_link']
+2025-01-14 14:43:30,964 - INFO - 127.0.0.1 - - [14/Jan/2025 14:43:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-01-14 14:46:33,396 - INFO - 127.0.0.1 - - [14/Jan/2025 14:46:33] "GET / HTTP/1.1" 200 -
+2025-01-14 14:46:33,664 - INFO - 127.0.0.1 - - [14/Jan/2025 14:46:33] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-14 14:46:33,665 - INFO - 127.0.0.1 - - [14/Jan/2025 14:46:33] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-14 14:46:33,775 - INFO - 127.0.0.1 - - [14/Jan/2025 14:46:33] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-01-14 14:46:33,783 - INFO - 127.0.0.1 - - [14/Jan/2025 14:46:33] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-01-14 14:46:33,913 - INFO - Attempting to clone repository using SSH key at /Users/benjaminwashington/.ssh/deploy_key_dashboard
+2025-01-14 14:46:33,916 - DEBUG - Popen(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpjlfs614h'], cwd=/Users/benjaminwashington/PycharmProjects/test.dashboard/MyCSVApp, stdin=None, shell=False, universal_newlines=True)
+2025-01-14 14:46:36,113 - DEBUG - Cmd(['git', 'clone', '-v', '--', 'git@github.com:onehydrogen/legislativeanalytics91.git', '/var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpjlfs614h'])'s unused stdout: 
+2025-01-14 14:46:36,118 - INFO - Looking for CSV at: /var/folders/9z/dvkqhb350zn147jsf1p_mpxm0000gn/T/tmpjlfs614h/MyCSVApp/src/data/legislative_analysis_AR_2025_20250114_135201.csv
+2025-01-14 14:46:36,119 - INFO - CSV file found, reading data
+2025-01-14 14:46:36,126 - INFO - Columns in CSV: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'co_sponsors', 'chamber', 'last_action', 'status', 'state_bill_link']
+2025-01-14 14:46:36,151 - INFO - 127.0.0.1 - - [14/Jan/2025 14:46:36] "POST /_dash-update-component HTTP/1.1" 200 -
