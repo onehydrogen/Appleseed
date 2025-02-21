@@ -143,53 +143,48 @@ def load_local_csv():
 def load_github_csv():
     """Loads CSV data with fallback options."""
     try:
-        # First try to load from local path
-        logger.info(f"Attempting to load CSV from local path: {CSV_PATH}")
-        if os.path.exists(CSV_PATH):
-            df = pd.read_csv(CSV_PATH)
-            if not df.empty:
-                logger.info(f"Successfully loaded local CSV with {len(df)} rows")
-                logger.info(f"Columns found: {df.columns.tolist()}")
-                return parse_contents(df)
+        logger.info("Attempting to fetch CSV from GitHub...")
 
-        # If local file doesn't exist or is empty, try GitHub
-        logger.info("Local file not found or empty, trying GitHub...")
-        import requests
+        # Update the raw URL to point directly to the CSV file
+        raw_url = "https://raw.githubusercontent.com/onehydrogen/Appleseed/main/MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047.csv"
 
-        raw_url = "https://github.com/onehydrogen/Appleseed.git"
-        logger.info(f"Attempting to fetch CSV from: {raw_url}")
+        response = requests.get(raw_url,headers={'Accept': 'text/csv'})
+        if response.status_code == 200:
+            # Create a temporary file to store the CSV content
+            with tempfile.NamedTemporaryFile(mode='w+',delete=False,suffix='.csv',encoding='utf-8') as temp_file:
+                temp_file.write(response.text)
+                temp_file.flush()
 
-        headers = {
-            'Accept': 'text/csv',
-            'User-Agent': 'Mozilla/5.0'
-        }
+                try:
+                    # Add more robust CSV reading options
+                    df = pd.read_csv(
+                        temp_file.name,
+                        encoding='utf-8',
+                        on_bad_lines='skip',  # Skip problematic lines
+                        sep=',',  # Explicitly specify comma separator
+                        quotechar='"',  # Handle quoted fields
+                        escapechar='\\',  # Handle escaped characters
+                        dtype=str  # Read all columns as strings initially
+                    )
 
-        response = requests.get(raw_url, headers=headers)
-        if response.status_code != 200:
-            logger.error(f"Failed to fetch CSV from GitHub. Status code: {response.status_code}")
+                    if not df.empty:
+                        logger.info(f"Successfully loaded GitHub CSV with {len(df)} rows")
+                        return parse_contents(df)
+                except Exception as e:
+                    logger.error(f"Error parsing CSV: {str(e)}")
+                    logger.error(f"Traceback: {traceback.format_exc()}")
+
+        else:
+            logger.error(f"Failed to fetch CSV. Status code: {response.status_code}")
             logger.error(f"Response content: {response.text[:200]}")
-            return get_sample_data()
 
-        # Create a temporary file to store the CSV content
-        with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.csv', encoding='utf-8') as temp_file:
-            temp_file.write(response.text)
-            temp_file.flush()
-
-            # Read the CSV using pandas
-            df = pd.read_csv(temp_file.name)
-            if df.empty:
-                logger.warning("Empty CSV file from GitHub, using sample data")
-                return get_sample_data()
-
-            logger.info(f"Successfully loaded GitHub CSV with {len(df)} rows")
-            logger.info(f"Columns found: {df.columns.tolist()}")
-            return parse_contents(df)
+        # If GitHub fails, try local data directory
+        return load_local_csv()
 
     except Exception as e:
-        logger.error(f"Error loading CSV: {str(e)}")
-        logger.error(f"Error traceback: {traceback.format_exc()}")
+        logger.error(f"Error in load_github_csv: {str(e)}")
+        logger.error(f"Traceback: {traceback.format_exc()}")
         return get_sample_data()
-
 
 def parse_contents(df):
     """Parses DataFrame and standardizes the data format."""
