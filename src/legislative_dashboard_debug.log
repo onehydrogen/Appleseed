@@ -849,3 +849,108 @@ before running the server.
 2025-02-21 08:36:26,723 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:8051
 2025-02-21 08:36:26,723 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-21 08:57:15,594 - INFO - 127.0.0.1 - - [21/Feb/2025 08:57:15] "GET / HTTP/1.1" 200 -
+2025-02-21 08:57:15,776 - INFO - 127.0.0.1 - - [21/Feb/2025 08:57:15] "GET /_dash-layout HTTP/1.1" 200 -
+2025-02-21 08:57:15,777 - INFO - 127.0.0.1 - - [21/Feb/2025 08:57:15] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-02-21 08:57:15,837 - INFO - 127.0.0.1 - - [21/Feb/2025 08:57:15] "GET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1" 200 -
+2025-02-21 08:57:15,849 - INFO - 127.0.0.1 - - [21/Feb/2025 08:57:15] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-02-21 08:57:15,862 - INFO - 127.0.0.1 - - [21/Feb/2025 08:57:15] "GET /assets/AR%20Appleseed%20square%20crop%20white%20on%20maroon%20300x300.png HTTP/1.1" 200 -
+2025-02-21 08:57:16,057 - INFO - Attempting to load CSV from local path: "C:/Users/bendw/Downloads/legislative_analysis_AR_2025_20250217_111047 copy.csv"
+2025-02-21 08:57:16,057 - INFO - Local file not found or empty, trying GitHub...
+2025-02-21 08:57:16,057 - INFO - Attempting to fetch CSV from: https://github.com/onehydrogen/legislativeanalytics91/blob/main/MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047%20copy.csv
+2025-02-21 08:57:16,550 - ERROR - Failed to fetch CSV from GitHub. Status code: 404
+2025-02-21 08:57:16,551 - ERROR - Response content: 
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html
+  lang="en"
+  
+  data-color-mode="auto" data-light-theme="light" data-dark-theme="dark"
+  data-a11y-animated-images="system" data-a11y-link-underlines="true"
+  
+  >
+
+
+
+  
+2025-02-21 08:57:16,555 - INFO - 127.0.0.1 - - [21/Feb/2025 08:57:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-02-21 08:58:40,522 - INFO - Dash is running on http://127.0.0.1:8051/
+
+2025-02-21 08:58:40,543 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8051
+2025-02-21 08:58:40,543 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-21 08:58:42,750 - INFO - 127.0.0.1 - - [21/Feb/2025 08:58:42] "GET / HTTP/1.1" 200 -
+2025-02-21 08:58:42,932 - INFO - 127.0.0.1 - - [21/Feb/2025 08:58:42] "GET /_dash-layout HTTP/1.1" 200 -
+2025-02-21 08:58:42,933 - INFO - 127.0.0.1 - - [21/Feb/2025 08:58:42] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-02-21 08:58:42,978 - INFO - 127.0.0.1 - - [21/Feb/2025 08:58:42] "GET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1" 200 -
+2025-02-21 08:58:42,981 - INFO - 127.0.0.1 - - [21/Feb/2025 08:58:42] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-02-21 08:58:43,000 - INFO - 127.0.0.1 - - [21/Feb/2025 08:58:43] "GET /assets/AR%20Appleseed%20square%20crop%20white%20on%20maroon%20300x300.png HTTP/1.1" 200 -
+2025-02-21 08:58:43,013 - INFO - Attempting to load CSV from local path: /Downloads/Appleseed-main/Appleseed-main/MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047 copy.csv
+2025-02-21 08:58:43,013 - INFO - Local file not found or empty, trying GitHub...
+2025-02-21 08:58:43,013 - INFO - Attempting to fetch CSV from: https://github.com/onehydrogen/legislativeanalytics91/blob/main/MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047%20copy.csv
+2025-02-21 08:58:43,452 - ERROR - Failed to fetch CSV from GitHub. Status code: 404
+2025-02-21 08:58:43,452 - ERROR - Response content: 
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html
+  lang="en"
+  
+  data-color-mode="auto" data-light-theme="light" data-dark-theme="dark"
+  data-a11y-animated-images="system" data-a11y-link-underlines="true"
+  
+  >
+
+
+
+  
+2025-02-21 08:58:43,457 - INFO - 127.0.0.1 - - [21/Feb/2025 08:58:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-02-21 08:59:57,846 - INFO - Dash is running on http://127.0.0.1:8051/
+
+2025-02-21 08:59:57,860 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8051
+2025-02-21 08:59:57,861 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-21 09:00:00,899 - INFO - 127.0.0.1 - - [21/Feb/2025 09:00:00] "GET / HTTP/1.1" 200 -
+2025-02-21 09:00:01,022 - INFO - 127.0.0.1 - - [21/Feb/2025 09:00:01] "GET /_dash-layout HTTP/1.1" 200 -
+2025-02-21 09:00:01,023 - INFO - 127.0.0.1 - - [21/Feb/2025 09:00:01] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-02-21 09:00:01,042 - INFO - 127.0.0.1 - - [21/Feb/2025 09:00:01] "GET /favicon.ico HTTP/1.1" 200 -
+2025-02-21 09:00:01,159 - INFO - 127.0.0.1 - - [21/Feb/2025 09:00:01] "GET /assets/AR%20Appleseed%20square%20crop%20white%20on%20maroon%20300x300.png HTTP/1.1" 200 -
+2025-02-21 09:00:01,159 - INFO - 127.0.0.1 - - [21/Feb/2025 09:00:01] "GET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1" 200 -
+2025-02-21 09:00:01,160 - INFO - 127.0.0.1 - - [21/Feb/2025 09:00:01] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-02-21 09:00:01,206 - INFO - Attempting to load CSV from local path: /Downloads/Appleseed-main/Appleseed-main/MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047 copy.csv
+2025-02-21 09:00:01,206 - INFO - Local file not found or empty, trying GitHub...
+2025-02-21 09:00:01,206 - INFO - Attempting to fetch CSV from: MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047 copy.csv
+2025-02-21 09:00:01,208 - ERROR - Error loading CSV: Invalid URL 'MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047 copy.csv': No scheme supplied. Perhaps you meant https://MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047 copy.csv?
+2025-02-21 09:00:01,224 - ERROR - Error traceback: Traceback (most recent call last):
+  File "C:\Users\bendw\Downloads\Appleseed-main\Appleseed-main\MyCSVApp\src\app.py", line 167, in load_github_csv
+    response = requests.get(raw_url, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bendw\PycharmProjects\Appleseed_Dash\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bendw\PycharmProjects\Appleseed_Dash\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bendw\PycharmProjects\Appleseed_Dash\.venv\Lib\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bendw\PycharmProjects\Appleseed_Dash\.venv\Lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "C:\Users\bendw\PycharmProjects\Appleseed_Dash\.venv\Lib\site-packages\requests\models.py", line 367, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\bendw\PycharmProjects\Appleseed_Dash\.venv\Lib\site-packages\requests\models.py", line 438, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047 copy.csv': No scheme supplied. Perhaps you meant https://MyCSVApp/data/legislative_analysis_AR_2025_20250217_111047 copy.csv?
+
+2025-02-21 09:00:01,229 - INFO - 127.0.0.1 - - [21/Feb/2025 09:00:01] "POST /_dash-update-component HTTP/1.1" 200 -
