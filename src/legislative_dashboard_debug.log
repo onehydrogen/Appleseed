@@ -833,3 +833,19 @@ before running the server.
 2025-02-21 08:03:23,318 - INFO - Columns found: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
 2025-02-21 08:03:23,318 - INFO - Processing DataFrame with columns: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
 2025-02-21 08:03:23,428 - INFO - 127.0.0.1 - - [21/Feb/2025 08:03:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-02-21 08:10:31,538 - INFO - 127.0.0.1 - - [21/Feb/2025 08:10:31] "GET / HTTP/1.1" 200 -
+2025-02-21 08:10:31,715 - INFO - 127.0.0.1 - - [21/Feb/2025 08:10:31] "GET /_dash-layout HTTP/1.1" 200 -
+2025-02-21 08:10:31,716 - INFO - 127.0.0.1 - - [21/Feb/2025 08:10:31] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-02-21 08:10:31,791 - INFO - 127.0.0.1 - - [21/Feb/2025 08:10:31] "GET /assets/AR%20Appleseed%20square%20crop%20white%20on%20maroon%20300x300.png HTTP/1.1" 200 -
+2025-02-21 08:10:31,815 - INFO - 127.0.0.1 - - [21/Feb/2025 08:10:31] "[36mGET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1[0m" 304 -
+2025-02-21 08:10:31,815 - INFO - 127.0.0.1 - - [21/Feb/2025 08:10:31] "[36mGET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1[0m" 304 -
+2025-02-21 08:10:31,886 - INFO - Attempting to load CSV from local path: C:/Users/bendw/Downloads/legislative_analysis_AR_2025_20250217_111047 copy.csv
+2025-02-21 08:10:31,898 - INFO - Successfully loaded local CSV with 855 rows
+2025-02-21 08:10:31,898 - INFO - Columns found: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 08:10:31,898 - INFO - Processing DataFrame with columns: ['year', 'bill_number', 'title', 'primary_sponsors', 'party', 'district', 'status', 'last_action', 'chamber', 'upcoming_hearings', 'past_hearings', 'state_bill_link']
+2025-02-21 08:10:32,035 - INFO - 127.0.0.1 - - [21/Feb/2025 08:10:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-02-21 08:36:26,705 - INFO - Dash is running on http://127.0.0.1:8051/
+
+2025-02-21 08:36:26,723 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8051
+2025-02-21 08:36:26,723 - INFO - [33mPress CTRL+C to quit[0m

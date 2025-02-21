@@ -35,7 +35,7 @@ load_dotenv()
 PAGE_SIZE = int(os.getenv('PAGE_SIZE', '10'))
 DEPLOY_KEY_PATH = os.getenv('DEPLOY_KEY_PATH')
 REPO_URL = os.getenv('REPO_URL', 'https://github.com/onehydrogen/Appleseed.git')
-CSV_PATH = 'C:/Users/bendw/Downloads/legislative_analysis_AR_2025_20250217_111047 copy.csv'  # Update this line
+CSV_PATH = 'Downloads/legislative_analysis_AR_2025_20250217_111047 copy.csv'  # Update this line
 DEBUG_MODE = os.getenv('DEBUG_MODE', 'False').lower() == 'true'
 
 # Path configuration
