@@ -3,3 +3,4 @@ dash_bootstrap_components==1.6.0
 pandas==2.2.3
 gunicorn
 dash-tools
+python-dotenv
